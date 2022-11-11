@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>VC-labs</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="/staic/styles/img/favicon.png" rel="icon">
+  <link href="/static/styles/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="/static/styles/vendor/aos/aos.css" rel="stylesheet">
+  <link href="/static/styles/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/static/styles/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="/static/styles/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="/static/styles/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="/static/styles/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="/static/styles/style_1.css" rel="stylesheet">
+  <link href="/static/styles/clipboard.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Day - v4.9.1
+  * Template URL: https://bootstrapmade.com/day-multipurpose-html-template-for-free/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex align-items-center">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <h1 class="logo"><a href="#home">VC-labs</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          
+          <li><a class="nav-link scrollto" href="#pricing">Instances</a></li>
+          <li><a class="nav-link scrollto" href="#services">Services</a></li>
+          <li class="dropdown"><a href="#"><span>{{user_name}}</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="/">Sign Out</a></li>
+              <!--<li><a href="#">Drop Down 2</a></li>-->
+            </ul>
+          </li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center">
+    <div class="container position-relative" data-aos="fade-up" data-aos-delay="500">
+      <h1>Welcome,{{user_name}}</h1>
+      <h2>Get Hands On Experience with VC-labs!</h2>
+      <a href="#about" class="btn-get-started scrollto">Get Started</a>
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left">
+            <img src="/static/styles/img/about.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right">
+            <h3>Virtual Computer Lab</h3>
+            <p class="fst-italic">
+             Virtual computer lab gives access to virtual server where user can use just connecting to it through secure shell connection for prodeuctivity.
+            </p>
+            <ul>
+              <li><i class="bi bi-check-circle"></i> Comes with different architecture.</li>
+              <li><i class="bi bi-check-circle"></i> Seamless connectivity.</li>
+              <li><i class="bi bi-check-circle"></i> Comes with many services just pulg it and use it..</li>
+            </ul>
+            <p>
+              
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+   
+   <!-- ======= Instance Section ======= -->
+   <section id="pricing" class="pricing">
+    <div class="container">
+
+      <div class="section-title">
+        <span>Instances</span>
+        <h2>Instances</h2>
+        <p></p>
+      </div>
+
+      <div class="row">
+
+        <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="150">
+          <div class="box">
+            <h3>Ubuntu </h3>
+            <h4><sup>(X86,X64)</sup><span></span></h4>
+            <script src="https://kit.fontawesome.com/d97b87339f.js" crossorigin="anonymous"></script>
+            <div class="clipboard">
+              <h6>SSH</h6>
+            <input onclick="copy()" class="copy-input" value="ssh {{user_name}}@0.0.0.0:0000" id="copyClipboard" readonly>
+            <button class="copy-btn" id="copyButton" onclick="copy()"><i class="far fa-copy"></i></button>
+          </div>
+          <div id="copied-success" class="copied">
+              <span>copied!</span>
+          </div>
+          
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mt-4 mt-md-0" data-aos="zoom-in">
+          <div class="box featured">
+            <h3>Ubuntu</h3>
+            <h4><sup>ARM</sup><span></span></h4>
+            <h5><sup>user:abc</sup><span></span></h4>
+            <h5><sup>password:abc</sup><span></span></h4>
+            <h6><sup>After logining in please do change password</sup><span></span></h4>
+            <script src="https://kit.fontawesome.com/d97b87339f.js" crossorigin="anonymous"></script>
+            <div class="clipboard_1">
+              <h6>VM</h6>
+            <input onclick="copy()" class="copy-input_1" value="0.0.0.0:{{port_no}}" id="copyClipboard_1" readonly>
+            <button class="copy-btn_1" id="copyButton" onclick="copy()"><i class="far fa-copy"></i></button>
+          </div>
+          <div id="copied-success_1" class="copied_1">
+              <span>copied!</span>
+          </div>
+          </div>
+        </div>
+<!--
+        <div class="col-lg-4 col-md-6 mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="150">
+          <div class="box">
+            <h3>Developer</h3>
+            <h4><sup>$</sup>29<span> / month</span></h4>
+            <ul>
+              <li>Aida dere</li>
+              <li>Nec feugiat nisl</li>
+              <li>Nulla at volutpat dola</li>
+              <li>Pharetra massa</li>
+              <li>Massa ultricies mi</li>
+            </ul>
+            <div class="btn-wrap">
+              <a href="#" class="btn-buy">Buy Now</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section> -->
+
+    
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services">
+      <div class="container">
+
+        <div class="section-title">
+          <span>Services</span>
+          <h2>Services</h2>
+          <p>pre confiured services..</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bxl-dribbble"></i></div>
+              <h4><a href="">My Sql </a></h4>
+              <p>MySQL is an open-source relational database management system. </p>
+              <div class="clipboard_2">
+                <h6>Please do create you user in Admier service before using below address!!</h6>
+                <h6>IP Address</h6>
+              <input onclick="copy()" class="copy-input_2" value="0.0.0.0:9091" id="copyClipboard_2" readonly>
+              <button class="copy-btn_2" id="copyButton" onclick="copy()"><i class="far fa-copy"></i></button>
+            </div>
+            <div id="copied-success_2" class="copied_2">
+                <span>copied!</span>
+            </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="150">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-file"></i></div>
+              <h4><a href="">Adminer</a></h4>
+              <p>Adminer is a tool for managing content in databases. It natively supports MySQL, MariaDB, PostgreSQL,etc</p>
+              <div class="clipboard_3">
+                <h6>user:- abc</h6>
+                <h6>password:- abc</h6>
+                <h6>IP Address</h6>
+              <input onclick="copy()" class="copy-input_3" value="0.0.0.0:8086" id="copyClipboard_3" readonly>
+              <button class="copy-btn_3" id="copyButton" onclick="copy()"><i class="far fa-copy"></i></button>
+            </div>
+            <div id="copied-success_3" class="copied_3">
+                <span>copied!</span>
+            </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="300">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-tachometer"></i></div>
+              <h4><a href="">Mongo DB</a></h4>
+              <p>MongoDB is a source-available cross-platform document-oriented database program.</p>
+              <h4>Comming soon!!</h4>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="fade-up" data-aos-delay="450">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-world"></i></div>
+              <h4><a href="">Postgre SQL</a></h4>
+              <p>PostgreSQL, also known as Postgres, is a free and open-source relational database management system emphasizing extensibility and SQL compliance.</p>
+              <h4>Comming soon!!</h4>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="fade-up" data-aos-delay="600">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-slideshow"></i></div>
+              <h4><a href="">Redis</a></h4>
+              <p>Redis is an in-memory data structure store, used as a distributed, in-memory key–value database, cache and message broker, with optional durability.</p>
+              <h4>Comming soon!!</h4>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="fade-up" data-aos-delay="750">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-arch"></i></div>
+              <h4><a href="">Comming Soon...</a></h4>
+              <p></p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+    <!-- ======= Cta Section ======= -->
+    <section id="cta" class="cta">
+      <div class="container" data-aos="zoom-in">
+
+        <div class="text-center">
+          <h3>Virtual Labs</h3>
+          <p>This Project is under development......</p>
+          <a class="cta-btn" href="#">Pull UP!!</a>
+        </div>
+
+      </div>
+    </section><!-- End Cta Section -->
+
+    
+    <!-- ======= Team Section ======= -->
+    
+    
+  
+
+    
+
+  </main><!-- End #main -->
+
+  
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="/static/styles/vendor/aos/aos.js"></script>
+  <script src="/static/styles/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="/static/styles/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="/static/styles/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="/static/styles/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="/static/styles/vendor/php-email-form/validate.js"></script>
+  <script scr="/static/styles/clip.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="/static/styles/main.js"></script>
+  <script src="/static/styles/clip.js"></script>
+
+
+</body>
+
+</html>
